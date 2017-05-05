@@ -1,0 +1,24 @@
+{
+  "name": "react-native-alipay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuhong1happy/react-native-alipay.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "react-native"
+  ],
+  "author": "Holly Liu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liuhong1happy/react-native-alipay/issues"
+  },
+  "homepage": "https://github.com/liuhong1happy/react-native-alipay#readme"
+}
