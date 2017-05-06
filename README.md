@@ -4,13 +4,13 @@
 
 ## 安装下载
 
-    npm install --save react-native-alipay
+    npm install --save rn-alipay
 
-    react-native link react-native-alipay
+    react-native link rn-alipay
 
 ## 调用
 
-    import RNAlipay from 'react-native-alipay'
+    import RNAlipay from 'rn-alipay'
     RNAlipay.pay(orderInfo, (res)=> {
         // res.status 可能是三个值'success/error/busy'
         // res.msg  消息为"支付成功"或者支付宝返回的memo
