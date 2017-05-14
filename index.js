@@ -1,3 +1,3 @@
-import {NativeModules} from 'react-native';
+import {NativeModules, NativeAppEventEmitter} from 'react-native';
 
 export default NativeModules.AlipayAPI;

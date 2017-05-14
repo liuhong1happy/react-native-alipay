@@ -1,5 +1,5 @@
 {
-  "name": "rn-alipay",
+  "name": "react-native-alipay",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,9 +13,7 @@
   "keywords": [
     "react",
     "react-component",
-    "react-native",
-    "react-native-alipay",
-    "rn-alipay"
+    "react-native"
   ],
   "author": "Holly Liu",
   "license": "MIT",
