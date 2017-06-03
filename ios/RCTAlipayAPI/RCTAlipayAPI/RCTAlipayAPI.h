@@ -1,18 +1,15 @@
 //
-//  RCTAlipayAPI.h
-//  RCTAlipayAPI
+//  RCTAlipay.h
+//  RCTAlipay
 //
-//  Created by 刘红 on 2017/6/2.
+//  Created by Holly Liu on 2017/6/3.
 //  Copyright © 2017年 Holly Liu. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#import <AlipaySDK/AlipaySDK.h>
 #import <React/RCTBridgeModule.h>
-#import <React/RCTLog.h>
+#import <AlipaySDK/AlipaySDK.h>
 
-@interface RCTAlipayAPI : NSObject <RCTBridgeModule>
-
-@property (nonatomic ,strong) RCTResponseSenderBlock mCallback;
-
+@interface RCTAlipay : NSObject <RCTBridgeModule>
 @end
