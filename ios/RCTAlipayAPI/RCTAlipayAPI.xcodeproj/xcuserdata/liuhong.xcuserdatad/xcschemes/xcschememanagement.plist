@@ -7,11 +7,16 @@
 		<key>RCTAlipayAPI.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>5AADAF591EE191A200221FAE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A2506B0E1EE14D2C004B42BA</key>
 		<dict>
 			<key>primary</key>
