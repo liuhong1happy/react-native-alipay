@@ -8,7 +8,7 @@
 
 #import "RCTAlipayAPI.h"
 
-@implementation RCTAlipay {
+@implementation RCTAlipayAPI {
     RCTResponseSenderBlock mCallback;
 }
 

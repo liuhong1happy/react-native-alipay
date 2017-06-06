@@ -11,5 +11,5 @@
 #import <React/RCTBridgeModule.h>
 #import <AlipaySDK/AlipaySDK.h>
 
-@interface RCTAlipay : NSObject <RCTBridgeModule>
+@interface RCTAlipayAPI : NSObject <RCTBridgeModule>
 @end
