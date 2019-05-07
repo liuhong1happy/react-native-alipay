@@ -1,6 +1,6 @@
 {
-  "name": "reactnative-alipay",
-  "version": "1.0.0",
+  "name": "@17ued/react-native-alipay",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {

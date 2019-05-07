@@ -7,25 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AB9111622808C2700F76294 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB9111522808C2700F76294 /* SystemConfiguration.framework */; };
+		5AB9111822808C3400F76294 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB9111722808C3400F76294 /* CoreTelephony.framework */; };
+		5AB9111A22808C3C00F76294 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB9111922808C3C00F76294 /* QuartzCore.framework */; };
+		5AB9111C22808C4300F76294 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB9111B22808C4300F76294 /* CoreText.framework */; };
+		5AB9111E22808C4C00F76294 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB9111D22808C4C00F76294 /* CoreGraphics.framework */; };
+		5AB9112022808C5400F76294 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB9111F22808C5400F76294 /* UIKit.framework */; };
+		5AB9112222808C5B00F76294 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB9112122808C5B00F76294 /* Foundation.framework */; };
+		5AB9112422808C6300F76294 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB9112322808C6300F76294 /* CFNetwork.framework */; };
+		5AB9112622808C6C00F76294 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB9112522808C6C00F76294 /* CoreMotion.framework */; };
+		5AB9112822808C9400F76294 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB9112722808C9400F76294 /* AlipaySDK.framework */; };
+		5AB9116A2280936600F76294 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB911692280936600F76294 /* libz.1.dylib */; };
+		5AB9116C2280938200F76294 /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB9116B2280938200F76294 /* libc++.1.dylib */; };
 		5AEAFC891EE1C4AA003C2E45 /* RCTAlipayAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A2506B131EE14D2C004B42BA /* RCTAlipayAPI.m */; };
-		5AEAFC8A1EE1C4AF003C2E45 /* RCTAlipayAPI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A2506B121EE14D2C004B42BA /* RCTAlipayAPI.h */; };
+		5AEAFC8A1EE1C4AF003C2E45 /* RCTAlipayAPI.h in Copy Files */ = {isa = PBXBuildFile; fileRef = A2506B121EE14D2C004B42BA /* RCTAlipayAPI.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5AADAF581EE191A200221FAE /* CopyFiles */ = {
+		5AADAF581EE191A200221FAE /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				5AEAFC8A1EE1C4AF003C2E45 /* RCTAlipayAPI.h in CopyFiles */,
+				5AEAFC8A1EE1C4AF003C2E45 /* RCTAlipayAPI.h in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5AADAF5A1EE191A200221FAE /* libRCTAlipayAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTAlipayAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AB9111122808C1700F76294 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		5AB9111322808C2000F76294 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		5AB9111522808C2700F76294 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5AB9111722808C3400F76294 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		5AB9111922808C3C00F76294 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5AB9111B22808C4300F76294 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		5AB9111D22808C4C00F76294 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5AB9111F22808C5400F76294 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5AB9112122808C5B00F76294 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5AB9112322808C6300F76294 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5AB9112522808C6C00F76294 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		5AB9112722808C9400F76294 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = RCTAlipayAPI/AlipaySDK.framework; sourceTree = "<group>"; };
+		5AB911692280936600F76294 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		5AB9116B2280938200F76294 /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "../../../../../../../../../usr/lib/libc++.1.dylib"; sourceTree = "<group>"; };
 		A2506B121EE14D2C004B42BA /* RCTAlipayAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTAlipayAPI.h; sourceTree = "<group>"; };
 		A2506B131EE14D2C004B42BA /* RCTAlipayAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTAlipayAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,17 +62,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AB9116C2280938200F76294 /* libc++.1.dylib in Frameworks */,
+				5AB9116A2280936600F76294 /* libz.1.dylib in Frameworks */,
+				5AB9112822808C9400F76294 /* AlipaySDK.framework in Frameworks */,
+				5AB9112622808C6C00F76294 /* CoreMotion.framework in Frameworks */,
+				5AB9112422808C6300F76294 /* CFNetwork.framework in Frameworks */,
+				5AB9112222808C5B00F76294 /* Foundation.framework in Frameworks */,
+				5AB9112022808C5400F76294 /* UIKit.framework in Frameworks */,
+				5AB9111E22808C4C00F76294 /* CoreGraphics.framework in Frameworks */,
+				5AB9111C22808C4300F76294 /* CoreText.framework in Frameworks */,
+				5AB9111A22808C3C00F76294 /* QuartzCore.framework in Frameworks */,
+				5AB9111822808C3400F76294 /* CoreTelephony.framework in Frameworks */,
+				5AB9111622808C2700F76294 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AB9111022808C1700F76294 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AB9116B2280938200F76294 /* libc++.1.dylib */,
+				5AB911692280936600F76294 /* libz.1.dylib */,
+				5AB9112722808C9400F76294 /* AlipaySDK.framework */,
+				5AB9112522808C6C00F76294 /* CoreMotion.framework */,
+				5AB9112322808C6300F76294 /* CFNetwork.framework */,
+				5AB9112122808C5B00F76294 /* Foundation.framework */,
+				5AB9111F22808C5400F76294 /* UIKit.framework */,
+				5AB9111D22808C4C00F76294 /* CoreGraphics.framework */,
+				5AB9111B22808C4300F76294 /* CoreText.framework */,
+				5AB9111922808C3C00F76294 /* QuartzCore.framework */,
+				5AB9111722808C3400F76294 /* CoreTelephony.framework */,
+				5AB9111522808C2700F76294 /* SystemConfiguration.framework */,
+				5AB9111322808C2000F76294 /* libz.tbd */,
+				5AB9111122808C1700F76294 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A2506B061EE14D2C004B42BA = {
 			isa = PBXGroup;
 			children = (
 				A2506B111EE14D2C004B42BA /* RCTAlipayAPI */,
 				A2506B101EE14D2C004B42BA /* Products */,
+				5AB9111022808C1700F76294 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,7 +136,7 @@
 			buildPhases = (
 				5AADAF561EE191A200221FAE /* Sources */,
 				5AADAF571EE191A200221FAE /* Frameworks */,
-				5AADAF581EE191A200221FAE /* CopyFiles */,
+				5AADAF581EE191A200221FAE /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -92,7 +153,7 @@
 		A2506B071EE14D2C004B42BA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Holly Liu";
 				TargetAttributes = {
 					5AADAF591EE191A200221FAE = {
@@ -135,9 +196,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = GNNW68E44D;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/RCTAlipayAPI/**",
 					"$(inherited)/**",
+					"$(PROJECT_DIR)/RCTAlipayAPI",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/RCTAlipayAPI",
@@ -149,10 +212,12 @@
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos10.3;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s i386";
 			};
 			name = Debug;
 		};
@@ -160,9 +225,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = GNNW68E44D;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/RCTAlipayAPI/**",
 					"$(inherited)/**",
+					"$(PROJECT_DIR)/RCTAlipayAPI",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/RCTAlipayAPI",
@@ -174,10 +241,12 @@
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos10.3;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s i386";
 			};
 			name = Release;
 		};
@@ -191,21 +260,30 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -222,10 +300,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos10.3;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-lz";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s i386";
 			};
 			name = Debug;
 		};
@@ -239,21 +319,30 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -264,10 +353,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos10.3;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-lz";
+				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s i386";
 			};
 			name = Release;
 		};

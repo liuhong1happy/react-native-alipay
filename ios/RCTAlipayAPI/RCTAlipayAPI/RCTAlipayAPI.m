@@ -9,21 +9,23 @@
 #import "RCTAlipayAPI.h"
 
 @implementation RCTAlipayAPI {
-    RCTResponseSenderBlock mCallback;
+    RCTPromiseResolveBlock mResolve;
+    RCTPromiseRejectBlock mReject;
 }
 
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_METHOD(pay:(NSString *)orderString callback:(RCTResponseSenderBlock)callback)
+RCT_EXPORT_METHOD(pay:(NSString *)orderString resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
 {
-    if (mCallback) {
+    if (mResolve) {
         NSMutableDictionary *body = @{@"status":@"busy"}.mutableCopy;
         body[@"msg"] = @"当前已经有支付在调用";
-        callback(@[body]);
+        mResolve(@[body]);
         return;
     }
     NSString *appScheme = @"alisdkdemo";
-    mCallback = callback;
+    mResolve = resolve;
+    mReject = reject;
     // NOTE: 调用支付结果开始支付
     [[AlipaySDK defaultService] payOrder:orderString fromScheme:appScheme callback:^(NSDictionary *resultDic) {
         NSLog(@"reslut = %@",resultDic);
@@ -32,9 +34,10 @@ RCT_EXPORT_METHOD(pay:(NSString *)orderString callback:(RCTResponseSenderBlock)c
         Boolean isSuccessed =  [resultStatus isEqualToString:@"9000"];
         
         NSMutableDictionary *body = @{@"status": isSuccessed ? @"success": @"error"}.mutableCopy;
+        body[@"isSuccess"] = isSuccessed ? @"1" : @"0";
         body[@"msg"] = isSuccessed ? @"支付成功" : memo;
         body[@"data"] = resultDic;
-        mCallback(@[body]);
+        self->mResolve(@[body]);
     }];
 }
 
