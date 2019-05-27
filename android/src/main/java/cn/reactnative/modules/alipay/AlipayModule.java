@@ -20,7 +20,6 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.bridge.Callback;
 import com.facebook.react.modules.core.RCTNativeAppEventEmitter;
 
 import org.json.JSONObject;
@@ -35,7 +34,7 @@ public class AlipayModule extends ReactContextBaseJavaModule {
     private static final int SDK_PAY_FLAG = 1;
     private static final int SDK_AUTH_FLAG = 2;
     private Activity mActivity = null;
-    private Callback mCallback = null;
+    private Promise mPromise = null;
 
     public AlipayModule(ReactApplicationContext context) {
         super(context);
@@ -48,13 +47,13 @@ public class AlipayModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void pay(String info, final Callback callback){
-        if(mCallback!=null) {
+    public void pay(String info, final Promise promise){
+        if(mPromise!=null) {
             // 已经有支付在调用了
             WritableMap map = Arguments.createMap();
             map.putString("status", "busy");
             map.putString("msg", "当前已经有支付在调用");
-            callback.invoke(map);
+            promise.resolve(map);
             return;
         }
         final Activity activity = getCurrentActivity();
@@ -75,15 +74,16 @@ public class AlipayModule extends ReactContextBaseJavaModule {
 
                 WritableMap map = Arguments.createMap();
                 map.putString("status",  isSuccessed ? "success" : "error");
+                map.putBoolean("isSuccess", isSuccessed);
                 map.putString("msg", isSuccessed ? "支付成功" : memo);
                 map.putString("data", resultInfo);
-                mCallback.invoke(map);
-                mCallback = null;
+                mPromise.resolve(map);
+                mPromise = null;
             }
         };
          // 必须异步调用
         Thread payThread = new Thread(payRunnable);
         payThread.start();
-        mCallback = callback;
+        mPromise = promise;
     }
 }
