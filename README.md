@@ -10,7 +10,7 @@ react-native link @17ued/react-native-alipay
 ```
 ## 调用
 ```js
-import RNAlipayApi from 'reactnative-alipay'
+import RNAlipayApi from '@17ued/react-native-alipay'
 RNAlipayApi.pay(orderInfo, (res)=> {
     // res.status 可能是三个值'success/error/busy'
     // res.msg  消息为"支付成功"或者支付宝返回的memo
